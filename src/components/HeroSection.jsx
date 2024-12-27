@@ -116,7 +116,7 @@ const HeroSection = () => {
           {/* Updated Social Links */}
           <div className="flex gap-6 pt-6">
             <a 
-              href="#"
+              href="https://github.com/SachinShet73"
               className="group p-3 bg-gradient-to-r from-amber-200/10 to-amber-100/5 
                        rounded-lg hover:from-amber-200/20 hover:to-amber-100/10 
                        transition-all duration-300 border border-amber-200/20 hover:border-amber-200/40"
@@ -127,7 +127,7 @@ const HeroSection = () => {
               <Github className="w-6 h-6 text-amber-200/60 group-hover:text-amber-200/90 transition-colors" />
             </a>
             <a 
-              href="#"
+              href="https://www.linkedin.com/in/sachin-shet-894680183/"
               className="group p-3 bg-gradient-to-r from-amber-200/10 to-amber-100/5 
                        rounded-lg hover:from-amber-200/20 hover:to-amber-100/10 
                        transition-all duration-300 border border-amber-200/20 hover:border-amber-200/40"
@@ -138,7 +138,7 @@ const HeroSection = () => {
               <Linkedin className="w-6 h-6 text-amber-200/60 group-hover:text-amber-200/90 transition-colors" />
             </a>
             <a 
-              href="#"
+              href="https://medium.com/@sachinshet135"
               className="group p-3 bg-gradient-to-r from-amber-200/10 to-amber-100/5 
                        rounded-lg hover:from-amber-200/20 hover:to-amber-100/10 
                        transition-all duration-300 border border-amber-200/20 hover:border-amber-200/40"
