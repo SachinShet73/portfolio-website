@@ -7,95 +7,69 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      title: "Senior Data Engineer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Senior Systems Engineer",
+      company: "Infosys",
+      location: "Bangalore, India",
+      period: "October 2023 - February 2024",
       type: "Full-time",
-      description: "Leading data infrastructure and ML platforms development for enterprise clients.",
+      description: "Promoted from Systems Engineer (November 2021 – September 2023). Led development of enterprise ETL solutions and data pipelines.",
       achievements: [
-        "Architected and implemented a real-time data processing pipeline handling 10TB+ daily data",
-        "Reduced cloud infrastructure costs by 45% through optimization and auto-scaling",
-        "Led a team of 5 engineers in modernizing the data warehouse architecture"
+        "Reduced data processing costs by 40% through design and implementation of Azure Data Factory ETL pipeline, automating 2GB+ daily data processing",
+        "Saved 20+ person-hours weekly by developing Python automation scripts that processed 55,000+ daily records",
+        "Achieved 99.9% data accuracy across 180+ tables by engineering resilient data migration workflows",
+        "Decreased manual operations by 90% through Apache Airflow workflow orchestration",
+        "Led cross-functional teams in delivering 3 major client projects ahead of schedule"
       ],
       technologies: [
-        "Apache Spark",
-        "Airflow",
-        "Kubernetes",
-        "AWS",
+        "Azure Data Factory",
+        "Azure Blob Storage",
         "Snowflake",
-        "Terraform"
-      ],
-      projects: [
-        {
-          name: "Data Lake Migration",
-          description: "Led the migration from legacy data warehouse to modern data lake architecture",
-          impact: "60% improvement in query performance"
-        },
-        {
-          name: "ML Pipeline Automation",
-          description: "Built automated ML training and deployment pipeline",
-          impact: "Reduced model deployment time from days to hours"
-        }
-      ]
-    },
-    {
-      title: "Data Engineer",
-      company: "DataFlow Inc",
-      location: "New York, NY",
-      period: "2020 - 2022",
-      type: "Full-time",
-      description: "Developed and maintained data pipelines and analytics infrastructure.",
-      achievements: [
-        "Implemented streaming analytics platform processing 1M+ events per second",
-        "Improved data pipeline reliability from 92% to 99.9%",
-        "Developed automated data quality monitoring system"
-      ],
-      technologies: [
+        "Apache Airflow",
         "Python",
-        "Kafka",
-        "Docker",
-        "GCP",
-        "BigQuery",
-        "dbt"
+        "SQL"
       ],
       projects: [
         {
-          name: "Real-time Analytics Platform",
-          description: "Built real-time analytics system for e-commerce platform",
-          impact: "Enabled real-time personalization for 2M+ users"
+          name: "Enterprise ETL Pipeline",
+          description: "Architected end-to-end data processing solution",
+          impact: "40% cost reduction in data processing"
         },
         {
-          name: "Data Quality Framework",
-          description: "Developed comprehensive data quality monitoring system",
-          impact: "Reduced data incidents by 75%"
+          name: "Data Migration Framework",
+          description: "Built resilient workflow between Azure and Snowflake",
+          impact: "99.9% data accuracy maintained"
         }
       ]
     },
     {
-      title: "ML Engineering Intern",
-      company: "AI Solutions Lab",
-      location: "Remote",
-      period: "Summer 2020",
+      title: "Machine Learning Intern",
+      company: "RoveLabs",
+      location: "Davangere, India",
+      period: "April 2020 - September 2020",
       type: "Internship",
-      description: "Worked on machine learning model deployment and optimization.",
+      description: "Developed real-time verification systems using computer vision and machine learning.",
       achievements: [
-        "Developed automated model retraining pipeline",
-        "Implemented A/B testing framework for model deployment",
-        "Created monitoring dashboard for model performance"
+        "Increased security system reliability with 95% face detection accuracy at 30 FPS",
+        "Reduced system latency to under 2 seconds through concurrent processing",
+        "Enhanced threat detection with 90% accuracy, reducing false positives by 40%"
       ],
       technologies: [
-        "PyTorch",
-        "MLflow",
-        "FastAPI",
-        "Redis",
-        "PostgreSQL"
+        "OpenCV",
+        "dlib",
+        "TensorFlow",
+        "Python",
+        "librosa"
       ],
       projects: [
         {
-          name: "Model Monitoring System",
-          description: "Built comprehensive monitoring system for ML models",
-          impact: "Reduced model degradation detection time by 80%"
+          name: "Real-time Verification System",
+          description: "Developed face detection and audio analysis system",
+          impact: "95% detection accuracy with 30 FPS performance"
+        },
+        {
+          name: "Audio Anomaly Detection",
+          description: "Created ML-based audio analysis system",
+          impact: "40% reduction in false positives"
         }
       ]
     }
