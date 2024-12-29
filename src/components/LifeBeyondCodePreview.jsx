@@ -32,13 +32,12 @@ import kk6 from '../images/kedarkantha/KK6.jpg';    // Sunset tents
 
 const LifeBeyondCodePreview = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('adventure');
   const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
   const [selectedJourney, setSelectedJourney] = useState(null);
   
   // Categories data
   const categories = [
-    { id: 'all', label: 'All', icon: Globe },
     { id: 'adventure', label: 'Adventures', icon: Mountain },
     { id: 'learning', label: 'Learning', icon: Book },
     { id: 'creative', label: 'Creative', icon: Camera },
@@ -53,7 +52,7 @@ const LifeBeyondCodePreview = () => {
       journeyKey: "vof-trek",
       icon: Mountain,
       location: "Uttarakhand, India",
-      date: "2024",
+      date: "2019",
       image: vof12,      // Main valley path image
   gallery: [
     vof12,           // Valley path
@@ -220,9 +219,7 @@ const LifeBeyondCodePreview = () => {
   };
 
   // Filter experiences based on selected category
-  const filteredExperiences = selectedCategory === 'all' 
-    ? experiences 
-    : experiences.filter(exp => exp.category === selectedCategory);
+  const filteredExperiences = experiences.filter(exp => exp.category === selectedCategory);
 
   const ImageGallery = ({ images, onClose }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -584,7 +581,7 @@ const LifeBeyondCodePreview = () => {
                        hover:from-amber-200/30 hover:to-amber-200/20
                        rounded-xl text-white transition-all duration-300"
             >
-              View All Life Beyond Code
+              View My Journey Beyond Code
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
