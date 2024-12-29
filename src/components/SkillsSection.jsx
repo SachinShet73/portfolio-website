@@ -1,11 +1,10 @@
 import React from 'react';
 import {
   Database, Code, Brain,
-  Flame, Server, ArrowLeftRight, Clock,
-  Cloud, Box, Container, Terminal,
+  Cloud, Server, ArrowLeftRight, Clock,
+  Box, Container, Terminal,
   FileCode, Network, CircuitBoard,
-  BarChart2, Binary, PackageOpen,
-  Sparkles
+  BarChart2, Binary, 
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -13,44 +12,41 @@ const SkillsSection = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
 
   const skillCategories = {
-    bigData: {
+    dataEngineering: {
       icon: Database,
-      title: "Big Data Technologies",
-      description: "Expertise in processing and analyzing large-scale data",
+      title: "Data Engineering & Cloud",
+      description: "Expertise in ETL pipelines and cloud platforms",
       skills: [
-        { name: 'Apache Spark', icon: Flame },
-        { name: 'Hadoop', icon: Server },
-        { name: 'Kafka', icon: ArrowLeftRight },
-        { name: 'Airflow', icon: Clock },
-        { name: 'Databricks', icon: Cloud },
-        { name: 'Delta Lake', icon: Box },
-        { name: 'AWS EMR', icon: Cloud },
-        { name: 'Google BigQuery', icon: Database },
-        { name: 'Snowflake', icon: Container }
+        { name: 'Azure Data Factory', icon: Cloud },
+        { name: 'Azure Blob Storage', icon: Container },
+        { name: 'Snowflake', icon: Database },
+        { name: 'Apache Airflow', icon: Clock },
+        { name: 'Apache Kafka', icon: ArrowLeftRight },
+        { name: 'Apache Spark', icon: Server }
       ]
     },
-    programming: {
+    databases: {
+      icon: Server,
+      title: "Databases & Storage",
+      description: "Database management and search solutions",
+      skills: [
+        { name: 'PostgreSQL', icon: Database },
+        { name: 'Elasticsearch', icon: Network },
+        { name: 'MongoDB', icon: Container },
+        { name: 'SQL', icon: FileCode }
+      ]
+    },
+    development: {
       icon: Code,
-      title: "Programming & Tools",
-      description: "Core development and deployment technologies",
+      title: "Development & ML",
+      description: "Programming languages and ML frameworks",
       skills: [
         { name: 'Python', icon: Terminal },
-        { name: 'Scala', icon: FileCode },
-        { name: 'SQL', icon: Database },
-        { name: 'Docker', icon: Box },
-        { name: 'Kubernetes', icon: Container }
-      ]
-    },
-    ml: {
-      icon: Brain,
-      title: "Machine Learning",
-      description: "AI and data science frameworks",
-      skills: [
-        { name: 'TensorFlow', icon: Network },
-        { name: 'PyTorch', icon: CircuitBoard },
-        { name: 'scikit-learn', icon: Binary },
+        { name: 'TensorFlow', icon: Brain },
+        { name: 'OpenCV', icon: CircuitBoard },
+        { name: 'NumPy', icon: Binary },
         { name: 'Pandas', icon: BarChart2 },
-        { name: 'NumPy', icon: PackageOpen }
+        { name: 'Docker', icon: Box }
       ]
     }
   };
