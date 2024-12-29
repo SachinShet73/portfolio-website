@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Mail, Linkedin, Github, MapPin, ExternalLink, Send, User, AtSign, MessageSquare } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const formRef = useRef();
@@ -20,16 +21,26 @@ const ContactSection = () => {
     setLoading(true);
 
     try {
-      // Simulate email sending
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      showAlert('success', 'Message sent successfully!');
-      formRef.current.reset();
+      const result = await emailjs.sendForm(
+        'service_w6ls32o',
+        'template_ntjhgi2',
+        formRef.current,
+        'p2aP-wT_U1qa90VwH'
+      );
+      
+      if (result.text === 'OK') {
+        showAlert('success', 'Message sent successfully!');
+        formRef.current.reset();
+      } else {
+        showAlert('error', 'Failed to send message. Please try again.');
+      }
     } catch (error) {
+      console.error('EmailJS Error:', error);
       showAlert('error', 'Failed to send message. Please try again.');
     } finally {
       setLoading(false);
     }
-  };
+};
 
   const showAlert = (type, message) => {
     setAlert({ show: true, type, message });
