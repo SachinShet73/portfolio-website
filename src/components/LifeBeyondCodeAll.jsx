@@ -6,6 +6,17 @@ import {
   ArrowLeft, ArrowRight, Plus
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import vof12 from '../images/vof/VOF12.jpg';   // Valley path
+import vof13 from '../images/vof/VOF13.jpg';   // Orange flowers
+import vof17 from '../images/vof/VOF17.jpg';   // Hemkund Lake
+import vof1 from '../images/vof/VOF1.jpg';     // Stone path
+import vof7 from '../images/vof/VOF7.jpg';     // Badrinath temple
+import vof15 from '../images/vof/VOF15.jpg';   // Evening aarti
+import vof14 from '../images/vof/VOF14.jpg';   // River valley
+import vof11 from '../images/vof/VOF11.jpg';   // Rest stop
+import vof16 from '../images/vof/VOF16.jpg';   // Group photo
+
+
 
 
 const LifeBeyondCodeAll = () => {
@@ -26,15 +37,30 @@ const LifeBeyondCodeAll = () => {
   // Full experiences data
   const experiences = [
     {
-      title: "Himalayan Trek",
+      title: "Valley of Flowers Trek",
       category: "adventure",
       icon: Mountain,
-      location: "Nepal",
-      date: "October 2023",
-      image: "/api/placeholder/400/300",
-      gallery: ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"],
-      description: "Conquered the challenging Annapurna Circuit, reaching an altitude of 5,416m.",
-      highlights: ["14 days of trekking", "5,416m altitude reached", "Local community interactions"]
+      location: "Uttarakhand, India", 
+      date: "2024",
+      image: vof12,      // Main valley path image
+  gallery: [
+    vof12,           // Valley path
+    vof13,           // Orange flowers
+    vof17,           // Hemkund Lake
+    vof1,            // Stone path
+    vof7,            // Badrinath temple
+    vof15,           // Evening aarti
+    vof14,           // River valley
+    vof11,           // Rest stop
+    vof16            // Group photo
+  ],
+      description: "A remarkable journey through the UNESCO World Heritage site, witnessing over 300 species of wildflowers in the Himalayas.",
+      highlights: [
+        "9-day expedition",
+        "15,200ft altitude at Hemkund Sahib",
+        "Rare Himalayan flora & fauna",
+        "World Heritage site exploration"
+      ]
     },
     {
       title: "Japanese Language",
@@ -118,37 +144,57 @@ const LifeBeyondCodeAll = () => {
 
   const journeyContent = {
     'adventure': {
-      story: `My journey to the Himalayas was more than just a trek; it was a transformative experience that challenged and changed me in ways I never expected.
+  story: `My journey to the Valley of Flowers was an enchanting exploration of one of nature's most spectacular displays, where the convergence of Eastern and Western Himalayas creates a unique botanical paradise.
 
-Beginning in the bustling streets of Kathmandu, I spent the first days gathering supplies and meeting my fellow trekkers. The anticipation built as our guide briefed us on what lay ahead - 14 days of pushing our limits in some of the world's most breathtaking landscapes.
+Starting from the spiritual town of Rishikesh at just over 1,000 feet, our expedition began with a scenic drive to Joshimath, our gateway to this floral wonderland. The anticipation built as we prepared for our trek into a valley that remained hidden from the world until its discovery by Frank S Smith in 1931.
 
-The early days of the trek took us through lush valleys and traditional villages, where we experienced the warmth of Nepalese hospitality. Each teahouse stay brought new friendships and insights into local culture. The sound of prayer flags fluttering in the wind became our constant companion.
+The trek from Govindghat to Ghangaria tested our endurance as we ascended through diverse terrain, but the promise of witnessing over 300 species of wildflowers kept our spirits high. The transformation of the landscape as we gained altitude was remarkable - each turn revealing new varieties of flora against the backdrop of snow-capped peaks.
 
-As we gained altitude, the landscape transformed dramatically. Pine forests gave way to rugged terrain, and the air grew thinner. The sight of the Annapurna range emerging through the clouds for the first time left us speechless. Each step higher brought new challenges but also new rewards.
+The highlight came as we entered the Valley of Flowers National Park, a UNESCO World Heritage site spanning 87 square kilometers. The valley was a canvas of colors - rare blue poppies, the sacred Brahmakamal, and countless other species creating a natural masterpiece. The presence of elusive wildlife - from Himalayan black bears to flying squirrels - added to the valley's mystique.
 
-The most challenging days came as we approached the highest points. Waking up at 3 AM for the final push tested our resolve, but watching the sunrise paint the mountains in gold made every struggle worthwhile. Reaching 5,416 meters was a triumph of body and spirit.
+Our ascent to Hemkund Sahib at 15,200 feet was particularly challenging but deeply rewarding. The sight of the high-altitude lake surrounded by seven peaks, with the early morning sun reflecting off its surface, created moments of profound peace and connection with nature.
 
-This journey taught me the true meaning of perseverance and the importance of taking life one step at a time. The mountains have a way of humbling you while also showing you your own strength.`,
-      timeline: [
-        { date: 'Day 1-2', title: 'Preparation & Acclimatization', description: 'Arrived in Kathmandu, gathered supplies, and attended briefing sessions.' },
-        { date: 'Day 3-5', title: 'Initial Trek', description: 'Started the trek through beautiful valleys and traditional villages.' },
-        { date: 'Day 6-8', title: 'High Altitude Progress', description: 'Reached higher altitudes, witnessing breathtaking mountain views.' },
-        { date: 'Day 9-11', title: 'Summit Push', description: 'Made the challenging push to reach higher camps and summit attempt.' },
-        { date: 'Day 12-14', title: 'Descent & Reflection', description: 'Successfully descended and celebrated the achievement.' }
-      ],
-      learnings: [
-        'Importance of mental preparation',
-        'Value of proper equipment and planning',
-        'Team collaboration in challenging conditions',
-        'Respect for nature and local cultures'
-      ],
-      experiences: [
-        'Encountered diverse wildlife',
-        'Experienced local hospitality',
-        'Witnessed stunning sunrise from high camps',
-        'Developed lifelong friendships with team members'
-      ]
+This journey wasn't just about witnessing natural beauty - it was about understanding the delicate balance of high-altitude ecosystems and the importance of preserving these unique natural heritage sites for future generations.`,
+  timeline: [
+    { 
+      date: 'Day 1',
+      title: 'Base Camp Arrival',
+      description: 'Reported at Rishikesh base camp and completed preparation briefings.'
     },
+    {
+      date: 'Day 2-3',
+      title: 'Journey to Ghangaria',
+      description: 'Traveled to Joshimath and trekked to Ghangaria at 10,200 ft.'
+    },
+    {
+      date: 'Day 4-5',
+      title: 'Valley Exploration',
+      description: 'Explored Valley of Flowers and ascended to Hemkund Sahib at 15,200 ft.'
+    },
+    {
+      date: 'Day 6-7',
+      title: 'Badrinath & Mana',
+      description: 'Visited Badrinath temple and Mana village with Vasudhara falls trek.'
+    },
+    {
+      date: 'Day 8-9',
+      title: 'Return Journey',
+      description: 'Descended back to Rishikesh, reflecting on the unique experience.'
+    }
+  ],
+  learnings: [
+    'High-altitude flora and ecosystem understanding',
+    'Importance of UNESCO World Heritage conservation',
+    'Himalayan geography and biodiversity',
+    'Sustainable trekking practices'
+  ],
+  experiences: [
+    'Witnessed over 300 wildflower species',
+    'Explored highest Gurudwara at Hemkund Sahib',
+    'Encountered rare Himalayan wildlife',
+    'Experienced local Gharwali culture'
+  ]
+},
     'learning': {
       story: `My journey into Japanese language and culture began with a simple fascination but evolved into a deep passion for understanding a completely different way of thinking and expressing oneself.
 
