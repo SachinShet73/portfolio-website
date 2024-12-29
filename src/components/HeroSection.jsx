@@ -12,10 +12,17 @@ const HeroSection = () => {
     name: "Sachin Shet",
     title: "Big Data Engineer",
     subtitle: "Machine Learning Enthusiast",
-    bio: "Big Data Engineer specializing in building scalable data pipelines and distributed systems. Passionate about leveraging ML/AI to derive meaningful insights from massive datasets."
+    bio:"Big Data Engineer specializing in scalable ETL pipelines and distributed systems, with expertise in cloud-native architectures. Currently pursuing Master's at Northeastern University, focusing on Big Data and Data Science while leveraging ML/AI to derive meaningful insights from massive datasets."
   };
 
-  const skills = ["Apache Spark", "Kafka", "Python", "Machine Learning", "AWS", "Docker"];
+  const skills = [
+    "Azure Data Factory",
+    "Apache Airflow",
+    "Python",
+    "Snowflake",
+    "Machine Learning",
+    "Docker"
+  ];
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
