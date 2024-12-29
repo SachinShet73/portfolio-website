@@ -15,7 +15,20 @@ import vof15 from '../images/vof/VOF15.jpg';   // Evening aarti
 import vof14 from '../images/vof/VOF14.jpg';   // River valley
 import vof11 from '../images/vof/VOF11.jpg';   // Rest stop
 import vof16 from '../images/vof/VOF16.jpg';   // Group photo
-
+import kk1 from '../images/kedarkantha/KK1.jpg';    // Shiva statue
+import kk9 from '../images/kedarkantha/KK9.jpg';    // Silhouette at sunrise
+import kk11 from '../images/kedarkantha/KK11.jpg';  // Standing against mountains
+import kk7 from '../images/kedarkantha/KK7.jpg';    // Snow peaks panorama
+import kk21 from '../images/kedarkantha/KK21.jpg';  // Snow mountain landscape
+import kk8 from '../images/kedarkantha/KK8.jpg';    // Summit group at sunrise
+import kk16 from '../images/kedarkantha/KK16.jpg';  // Large group photo
+import kk17 from '../images/kedarkantha/KK17.JPG';  // Fun group shot
+import kk18 from '../images/kedarkantha/KK18.jpg';  // Sunset silhouettes
+import kk19 from '../images/kedarkantha/KK19.jpg';  // More silhouettes
+import kk3 from '../images/kedarkantha/KK3.jpg';    // Forest sunset
+import kk4 from '../images/kedarkantha/KK4.jpg';    // Starry night
+import kk5 from '../images/kedarkantha/KK5.jpg';    // Night camping
+import kk6 from '../images/kedarkantha/KK6.jpg';    // Sunset tents
 
 const LifeBeyondCodePreview = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
@@ -37,6 +50,7 @@ const LifeBeyondCodePreview = () => {
     {
       title: "Valley of Flowers Trek",
       category: "adventure",
+      journeyKey: "vof-trek",
       icon: Mountain,
       location: "Uttarakhand, India",
       date: "2024",
@@ -61,24 +75,41 @@ const LifeBeyondCodePreview = () => {
       ]
     },
     {
-      title: "Japanese Language",
-      category: "learning",
-      icon: Book,
-      location: "Self-Study & Classes",
-      date: "2022 - Present",
-      image: "/api/placeholder/400/300",
+      title: "Kedarkantha Winter Trek",
+      category: "adventure",
+      journeyKey: "kk-trek",
+      icon: Mountain,
+      location: "Uttarkashi, Uttarakhand",
+      date: "2022-23",
+      image: kk9,
       gallery: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600"
+        kk1,    // Shiva statue
+        kk9,    // Silhouette at sunrise
+        kk11,   // Standing against mountains
+        kk7,    // Snow peaks panorama
+        kk21,   // Snow mountain landscape
+        kk8,    // Summit group at sunrise
+        kk16,   // Large group photo
+        kk17,   // Fun group shot
+        kk18,   // Sunset silhouettes
+        kk19,   // More silhouettes
+        kk3,    // Forest sunset
+        kk4,    // Starry night
+        kk5,    // Night camping
+        kk6     // Sunset tents
       ],
-      description: "Dedicated to mastering Japanese language and culture.",
-      milestone: "JLPT N4 Certified",
-      highlights: ["Daily language practice", "Cultural workshops", "Language exchange meetups"]
+      description: "A breathtaking winter expedition through snow-covered peaks, ancient forests, and mythological sites, reaching an altitude of 12,500 ft in the Himalayas.",
+      highlights: [
+        "8-day winter expedition",
+        "12,500ft summit altitude",
+        "Ancient forests & meadows",
+        "Mythological significance"
+      ]
     }
   ];
 
   const journeyContent = {
-    'adventure': {
+    'vof-trek': {
       story: `My journey to the Valley of Flowers was an enchanting exploration of one of nature's most spectacular displays, where the convergence of Eastern and Western Himalayas creates a unique botanical paradise.
   
   Starting from the spiritual town of Rishikesh at just over 1,000 feet, our expedition began with a scenic drive to Joshimath, our gateway to this floral wonderland. The anticipation built as we prepared for our trek into a valley that remained hidden from the world until its discovery by Frank S Smith in 1931.
@@ -110,35 +141,80 @@ const LifeBeyondCodePreview = () => {
         'Experienced local Gharwali culture'
       ]
     },
-    'learning': {
-      story: `My journey into Japanese language and culture began with a simple fascination but evolved into a deep passion for understanding a completely different way of thinking and expressing oneself.
-
-The initial months were both exciting and daunting. Learning hiragana and katakana opened up a new world of written expression, while the first kanji characters seemed like artistic puzzles waiting to be solved. Each small victory, like successfully ordering food in Japanese or understanding a simple conversation, felt immensely rewarding.
-
-As my studies progressed, I discovered that learning Japanese wasn't just about memorizing vocabulary and grammar patterns - it was about understanding a mindset. The way the language treats context and relationship nuances revealed fascinating aspects of Japanese culture and social dynamics.
-
-Cultural workshops became a highlight of my journey. Through calligraphy sessions, tea ceremonies, and traditional art classes, I gained insights that textbooks could never provide. Language exchange meetups turned into lasting friendships, offering authentic practice and cultural exchange.
-
-The path to JLPT N4 certification was challenging but deeply fulfilling. It required consistent dedication, from early morning flashcard reviews to late-night grammar practice. Each level of progress unveiled new layers of understanding, not just of the language, but of myself as a learner.
-
-Today, this journey continues. Whether I'm watching Japanese films without subtitles, reading manga in its original form, or conversing with native speakers, each interaction adds another dimension to my understanding and appreciation of this rich language and culture.`,
+    'kk-trek': {
+      story: `My journey to Kedarkantha Peak was a transformative winter expedition that combined the thrill of high-altitude trekking with deep mythological significance. Beginning in the historic town of Mussoorie, our expedition took us through some of the most spectacular winter landscapes in the Himalayas.
+    
+    From the Mussoorie Transit Camp, we made our way to Naitwar base camp, where the real adventure began. The initial day of orientation and acclimatization walks proved crucial, giving us time to adapt to the altitude and prepare for the challenges ahead. The early morning briefings and training sessions built both our skills and team spirit.
+    
+    The trek from Naitwar to Ganka ka Thatch marked our first major ascent. As we climbed through ancient deodar and pine forests, each turn revealed new vistas of snow-capped peaks. The air grew crisper, and the landscape transformed into a winter wonderland. Our trek to Pukhrola Thatch at 10,800 feet tested our endurance but rewarded us with breathtaking views of the Kedarkantha summit.
+    
+    The summit day was the most challenging and rewarding. Starting before dawn, we made our push to the 12,500 feet summit. The early morning light painted the snow-covered peaks in hues of gold and pink, creating a magical atmosphere that made every step worthwhile. Standing at the summit, surrounded by the majestic peaks of Swargarohini, Bandarpoonch, and Kala Nag, was a moment of profound achievement and connection with nature.
+    
+    What made this trek special was its deep connection to Indian mythology. The land is known for its sacred sites, and the story of Duryodhana adds a layer of cultural richness to the natural beauty. The evening discussions around these stories, shared over warm cups of tea at our campsites, added depth to our understanding of the region's significance.
+    
+    The descent through Akhoti Thatch offered a different perspective of the landscape we had conquered. Each step down was a moment to reflect on our achievement and the bonds formed with fellow trekkers. The final celebration at base camp, complete with certificate distribution, marked not just the end of a trek, but the completion of a journey that tested our limits and expanded our horizons.
+    
+    Throughout the expedition, we experienced the true diversity of Himalayan winters - from star-filled nights in our tents to sunrises that turned the snow peaks into golden spires. The journey wasn't just about reaching a summit; it was about discovering the perfect harmony between adventure, nature, and ancient tradition.`,
+    
       timeline: [
-        { date: 'Month 1-2', title: 'Foundations', description: 'Mastered basic grammar and essential vocabulary.' },
-        { date: 'Month 3-4', title: 'Intermediate Skills', description: 'Developed reading and writing abilities.' },
-        { date: 'Month 5-6', title: 'Advanced Practice', description: 'Engaged in conversation practice and cultural studies.' },
-        { date: 'Month 7-8', title: 'Certification Prep', description: 'Prepared for and achieved JLPT certification.' }
+        {
+          date: 'Day 1',
+          title: 'Arrival at Mussoorie',
+          description: 'Reported at Transit Camp Youth Hostel Mussoorie, preparing for the adventure ahead.'
+        },
+        {
+          date: 'Day 2',
+          title: 'Journey to Base',
+          description: 'Traveled from Mussoorie to Naitwar base camp, setting the stage for our trek.'
+        },
+        {
+          date: 'Day 3',
+          title: 'Acclimatization',
+          description: 'Orientation, training, and acclimatization walks to prepare for the ascent.'
+        },
+        {
+          date: 'Day 4',
+          title: 'First Trek Day',
+          description: 'Trek from Naitwar to Ganka ka Thatch (8,900 ft), through beautiful forests.'
+        },
+        {
+          date: 'Day 5',
+          title: 'High Altitude Ascent',
+          description: 'Climbed to Pukhrola Thatch (10,800 ft), with clear views of the summit ahead.'
+        },
+        {
+          date: 'Day 6',
+          title: 'Summit Day',
+          description: 'Summit push to Kedarkantha (12,500 ft) and descent to Akhoti Thatch.'
+        },
+        {
+          date: 'Day 7',
+          title: 'Final Descent',
+          description: 'Trek from Akhoti Thatch to base camp, celebration and certificate distribution.'
+        },
+        {
+          date: 'Day 8',
+          title: 'Journey Home',
+          description: 'Departing from base camp with memories and achievements.'
+        }
       ],
+    
       learnings: [
-        'Systematic approach to language acquisition',
-        'Cultural insights through language',
-        'Importance of consistent practice',
-        'Value of language exchange partners'
+        'Winter high-altitude trekking techniques',
+        'Snow craft and safety measures',
+        'Team dynamics and leadership',
+        'Local mythology and cultural significance',
+        'Himalayan ecosystem understanding',
+        'Cold weather survival skills'
       ],
+    
       experiences: [
-        'Participated in language exchange meetups',
-        'Attended cultural workshops',
-        'Connected with native speakers',
-        'Explored Japanese media and literature'
+        'Summit achievement at 12,500 feet',
+        'Witnessing breathtaking Himalayan sunrises',
+        'Night camping under starlit skies',
+        'Cultural immersion in mountain communities',
+        'Team bonding through challenges',
+        'Photography in pristine winter conditions'
       ]
     }
   };
@@ -222,7 +298,7 @@ Today, this journey continues. Whether I'm watching Japanese films without subti
 
   const JourneyModal = ({ experience, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const content = journeyContent[experience.category];
+    const content = journeyContent[experience.journeyKey];  // Use journeyKey instead of category
 
     if (!content) return null;
 
