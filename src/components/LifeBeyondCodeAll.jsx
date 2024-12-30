@@ -16,6 +16,22 @@ import vof14 from '../images/vof/VOF14.jpg';   // River valley
 import vof11 from '../images/vof/VOF11.jpg';   // Rest stop
 import vof16 from '../images/vof/VOF16.jpg';   // Group photo
 
+// Import Kedarkantha images
+import kk1 from '../images/kedarkantha/KK1.jpg';    
+import kk9 from '../images/kedarkantha/KK9.jpg';    
+import kk11 from '../images/kedarkantha/KK11.jpg';  
+import kk7 from '../images/kedarkantha/KK7.jpg';    
+import kk21 from '../images/kedarkantha/KK21.jpg';  
+import kk8 from '../images/kedarkantha/KK8.jpg';    
+import kk16 from '../images/kedarkantha/KK16.jpg';  
+import kk17 from '../images/kedarkantha/KK17.JPG';  
+import kk18 from '../images/kedarkantha/KK18.jpg';  
+import kk19 from '../images/kedarkantha/KK19.jpg';  
+import kk3 from '../images/kedarkantha/KK3.jpg';    
+import kk4 from '../images/kedarkantha/KK4.jpg';    
+import kk5 from '../images/kedarkantha/KK5.jpg';    
+import kk6 from '../images/kedarkantha/KK6.jpg';  
+
 
 
 
@@ -39,6 +55,7 @@ const LifeBeyondCodeAll = () => {
     {
       title: "Valley of Flowers Trek",
       category: "adventure",
+      journeyKey: "vof-trek",
       icon: Mountain,
       location: "Uttarakhand, India", 
       date: "2024",
@@ -60,6 +77,25 @@ const LifeBeyondCodeAll = () => {
         "15,200ft altitude at Hemkund Sahib",
         "Rare Himalayan flora & fauna",
         "World Heritage site exploration"
+      ]
+    },
+    {
+      title: "Kedarkantha Winter Trek",
+      category: "adventure",
+      journeyKey: "kk-trek", 
+      icon: Mountain,
+      location: "Uttarkashi, Uttarakhand",
+      date: "2022-23",
+      image: kk9,
+      gallery: [
+        kk1, kk9, kk11, kk7, kk21, kk8, kk16, kk17, kk18, kk19, kk3, kk4, kk5, kk6
+      ],
+      description: "A breathtaking winter expedition through snow-covered peaks, ancient forests, and mythological sites, reaching an altitude of 12,500 ft in the Himalayas.",
+      highlights: [
+        "8-day winter expedition",
+        "12,500ft summit altitude",
+        "Ancient forests & meadows",
+        "Mythological significance"
       ]
     },
     {
@@ -143,7 +179,7 @@ const LifeBeyondCodeAll = () => {
   ];
 
   const journeyContent = {
-    'adventure': {
+    'vof-trek': {
   story: `My journey to the Valley of Flowers was an enchanting exploration of one of nature's most spectacular displays, where the convergence of Eastern and Western Himalayas creates a unique botanical paradise.
 
 Starting from the spiritual town of Rishikesh at just over 1,000 feet, our expedition began with a scenic drive to Joshimath, our gateway to this floral wonderland. The anticipation built as we prepared for our trek into a valley that remained hidden from the world until its discovery by Frank S Smith in 1931.
@@ -195,6 +231,44 @@ This journey wasn't just about witnessing natural beauty - it was about understa
     'Experienced local Gharwali culture'
   ]
 },
+'kk-trek': {
+      story: `My journey to Kedarkantha Peak was a transformative winter expedition that combined the thrill of high-altitude trekking with deep mythological significance. Beginning in the historic town of Mussoorie, our expedition took us through some of the most spectacular winter landscapes in the Himalayas.
+
+From the Mussoorie Transit Camp, we made our way to Naitwar base camp, where the real adventure began. The initial day of orientation and acclimatization walks proved crucial, giving us time to adapt to the altitude and prepare for the challenges ahead. The early morning briefings and training sessions built both our skills and team spirit.
+
+The trek from Naitwar to Ganka ka Thatch marked our first major ascent. As we climbed through ancient deodar and pine forests, each turn revealed new vistas of snow-capped peaks. The air grew crisper, and the landscape transformed into a winter wonderland. Our trek to Pukhrola Thatch at 10,800 feet tested our endurance but rewarded us with breathtaking views of the Kedarkantha summit.
+
+The summit day was the most challenging and rewarding. Starting before dawn, we made our push to the 12,500 feet summit. The early morning light painted the snow-covered peaks in hues of gold and pink, creating a magical atmosphere that made every step worthwhile. Standing at the summit, surrounded by the majestic peaks of Swargarohini, Bandarpoonch, and Kala Nag, was a moment of profound achievement and connection with nature.
+
+What made this trek special was its deep connection to Indian mythology. The land is known for its sacred sites, and the story of Duryodhana adds a layer of cultural richness to the natural beauty. The evening discussions around these stories, shared over warm cups of tea at our campsites, added depth to our understanding of the region's significance.`,
+      timeline: [
+        { date: 'Day 1', title: 'Arrival at Mussoorie', description: 'Reported at Transit Camp Youth Hostel Mussoorie, preparing for the adventure ahead.' },
+        { date: 'Day 2', title: 'Journey to Base', description: 'Traveled from Mussoorie to Naitwar base camp, setting the stage for our trek.' },
+        { date: 'Day 3', title: 'Acclimatization', description: 'Orientation, training, and acclimatization walks to prepare for the ascent.' },
+        { date: 'Day 4', title: 'First Trek Day', description: 'Trek from Naitwar to Ganka ka Thatch (8,900 ft), through beautiful forests.' },
+        { date: 'Day 5', title: 'High Altitude Ascent', description: 'Climbed to Pukhrola Thatch (10,800 ft), with clear views of the summit ahead.' },
+        { date: 'Day 6', title: 'Summit Day', description: 'Summit push to Kedarkantha (12,500 ft) and descent to Akhoti Thatch.' },
+        { date: 'Day 7', title: 'Final Descent', description: 'Trek from Akhoti Thatch to base camp, celebration and certificate distribution.' },
+        { date: 'Day 8', title: 'Journey Home', description: 'Departing from base camp with memories and achievements.' }
+      ],
+      learnings: [
+        'Winter high-altitude trekking techniques',
+        'Snow craft and safety measures',
+        'Team dynamics and leadership',
+        'Local mythology and cultural significance',
+        'Himalayan ecosystem understanding',
+        'Cold weather survival skills'
+      ],
+      experiences: [
+        'Summit achievement at 12,500 feet',
+        'Witnessing breathtaking Himalayan sunrises',
+        'Night camping under starlit skies',
+        'Cultural immersion in mountain communities',
+        'Team bonding through challenges',
+        'Photography in pristine winter conditions'
+      ]
+    },
+
     'learning': {
       story: `My journey into Japanese language and culture began with a simple fascination but evolved into a deep passion for understanding a completely different way of thinking and expressing oneself.
 
@@ -367,9 +441,16 @@ Today, this journey continues to unfold. Whether practicing a challenging piece,
 
   const JourneyModal = ({ experience, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const content = journeyContent[experience.category];
+    const content = journeyContent[experience.journeyKey];
 
-    if (!content) return null;
+        // Debug logging
+        console.log('Journey Key:', experience.journeyKey);
+        console.log('Content:', content);
+
+        if (!content) {
+          console.log('No content found for journey key:', experience.journeyKey);
+          return null;
+        }
 
     return (
       <div className="fixed inset-0 bg-gray-900/95 z-50 overflow-y-auto">
