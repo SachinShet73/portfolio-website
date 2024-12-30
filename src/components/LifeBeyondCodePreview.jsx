@@ -581,7 +581,7 @@ const LifeBeyondCodePreview = () => {
                        hover:from-amber-200/30 hover:to-amber-200/20
                        rounded-xl text-white transition-all duration-300"
             >
-              View My Journey Beyond Code
+              View My different experiences
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
