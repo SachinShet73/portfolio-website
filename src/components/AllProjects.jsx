@@ -129,6 +129,71 @@ Key achievements:
     tags: ["Machine Learning", "Anomaly Detection", "Predictive Maintenance"],
     // ... other projects
   },
+
+  {
+    id: 3, // Adjust ID as needed
+    title: "University Event Management System",
+    subtitle: "Full-Stack Next.js Application",
+    category: "academic", // or whichever category fits best
+    thumbnail: "/api/placeholder/400/300", // Replace with actual screenshot
+    images: [
+      "/images/login.png",
+      "/images/user-management.png",
+      "/images/venues.png",
+      "/images/create-event.png",
+      "/images/events-organizer.png",
+      "/images/events-attendee.png"
+    ],
+    description: "A comprehensive event management system for universities with role-based access control and real-time updates.",
+    fullDescription: `Developed a full-stack Next.js application for managing university events, providing a seamless experience for admins, organizers, and attendees.
+  
+  The system handles complete event lifecycle management including creation, registration, venue management, and user administration with role-based access control.
+  
+  Key features:
+  - Role-based authentication (Admin, Organizer, Attendee)
+  - Event creation and management
+  - Venue capacity tracking and management
+  - User registration and profile management
+  - Real-time event registration updates
+  - Administrative dashboard with analytics`,
+    status: "Production",
+    timeline: "3 months",
+    team: "Solo Project",
+    impact: [
+      { metric: "1000+", description: "User capacity" },
+      { metric: "100%", description: "Test coverage" },
+      { metric: "50+", description: "API endpoints" },
+      { metric: "<2s", description: "Page load time" }
+    ],
+    technologies: {
+      frontend: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "Lucide Icons"],
+      backend: ["Next.js API Routes", "MS SQL Server", "Node.js"],
+      ui: ["shadcn/ui", "Tailwind CSS", "Geist Font"],
+      tools: ["ESLint", "Docker", "Git"]
+    },
+    challenges: [
+      "Implementing secure role-based access control",
+      "Managing complex database relationships",
+      "Handling real-time event registration updates",
+      "Building responsive interfaces for all device sizes"
+    ],
+    solutions: [
+      "Created middleware for route protection and role verification",
+      "Designed efficient SQL schema with proper indexing",
+      "Implemented optimistic UI updates with server validation",
+      "Used Tailwind CSS for mobile-first responsive design"
+    ],
+    outcomes: [
+      "Successfully deployed production-ready application",
+      "Achieved 100% test coverage",
+      "Implemented all core features with room for expansion",
+      "Created comprehensive documentation for future maintenance"
+    ],
+    liveUrl: "https://university-event-management-system-m8s7.vercel.app/", 
+    githubUrl: "https://github.com/SachinShet73/University-Event-Management-System", 
+    tags: ["Next.js", "React", "TypeScript", "SQL Server", "Event Management", "Full Stack"]
+  } ,
+
   ];
 
   const allTechnologies = [...new Set(
