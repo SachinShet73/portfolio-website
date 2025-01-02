@@ -7,6 +7,14 @@ import {
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 
+import loginImage from '../images/event/loginscreen.jpg';
+import userManagementImage from '../images/event/adminusermanagement.jpg';
+import venuesImage from '../images/event/venues.png';
+import createEventImage from '../images/event/eventcreation.png';
+import eventsOrganizerImage from '../images/event/events-organizer.png';
+import eventsAttendeeImage from '../images/event/events-attendee.png';
+
+
 const AllProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
@@ -21,7 +29,7 @@ const AllProjects = () => {
     { id: 'academic', label: 'Academic Projects', icon: Award }
   ];
 
-  // Enhanced project data
+
   const projects = [
     {
       id: 1,
@@ -135,14 +143,15 @@ Key achievements:
     title: "University Event Management System",
     subtitle: "Full-Stack Next.js Application",
     category: "academic", // or whichever category fits best
-    thumbnail: "/api/placeholder/400/300", // Replace with actual screenshot
+    thumbnail: loginImage, // Replace with actual screenshot
     images: [
-      "/images/login.png",
-      "/images/user-management.png",
-      "/images/venues.png",
-      "/images/create-event.png",
-      "/images/events-organizer.png",
-      "/images/events-attendee.png"
+      loginImage,
+      userManagementImage,
+      venuesImage ,
+      createEventImage ,
+      eventsOrganizerImage ,
+      eventsAttendeeImage ,
+
     ],
     description: "A comprehensive event management system for universities with role-based access control and real-time updates.",
     fullDescription: `Developed a full-stack Next.js application for managing university events, providing a seamless experience for admins, organizers, and attendees.
@@ -158,9 +167,9 @@ Key achievements:
   - Administrative dashboard with analytics`,
     status: "Production",
     timeline: "3 months",
-    team: "Solo Project",
+    team: "group Project",
     impact: [
-      { metric: "1000+", description: "User capacity" },
+      { metric: "1000+", description: "Student capacity" },
       { metric: "100%", description: "Test coverage" },
       { metric: "50+", description: "API endpoints" },
       { metric: "<2s", description: "Page load time" }
