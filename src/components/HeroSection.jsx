@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Database, FileDown, Github, Linkedin, FileText, Code, Terminal, Box, Star, Circle } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import profileImage from '../images/profile/profilepicture.jpg';
-import resumePDF from '../assets/Resume.pdf';
+// Remove or comment out the resume PDF import if the file doesn't exist
+// import resumePDF from '../assets/resume.pdf';
 
 const HeroSection = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
@@ -25,12 +26,18 @@ const HeroSection = () => {
   ];
 
   const handleDownloadResume = () => {
+    // Modify this to either use a different path or provide an alert that the resume is coming soon
+    alert("Resume download will be available soon!");
+    
+    // Commented out original code that used the missing PDF
+    /*
     const link = document.createElement('a');
     link.href = resumePDF;
     link.download = 'Sachin_Shet_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    */
   };
 
   const generateDecorations = (count) => {
