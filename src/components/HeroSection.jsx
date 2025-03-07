@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Database, FileDown, Github, Linkedin, FileText, Code, Terminal, Box, Star, Circle } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import profileImage from '../images/profile/profilepicture.jpg';
-import resumePDF from '../assets/resume.pdf';
+import resumePDF from '../assets/Resume.pdf';
 
 const HeroSection = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);

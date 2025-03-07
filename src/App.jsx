@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AllProjects from './components/AllProjects';
 import AllArticles from './components/AllArticles';
-import LifeBeyondCodeAll from './components/LifeBeyondCodeAll'; // Add this import
+import AllCertifications from './components/AllCertifications';
+import LifeBeyondCodeAll from './components/LifeBeyondCodeAll';
 import emailjs from '@emailjs/browser';
 emailjs.init('YOUR_PUBLIC_KEY');
 
@@ -14,8 +15,8 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<AllProjects />} />
       <Route path="/articles" element={<AllArticles />} />
-      <Route path="/life" element={<LifeBeyondCodeAll />} /> {/* Add this route */}
-    
+      <Route path="/certifications" element={<AllCertifications />} />
+      <Route path="/life" element={<LifeBeyondCodeAll />} />
     </Routes>
   );
 };

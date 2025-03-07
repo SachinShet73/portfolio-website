@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection';
 import SkillsSection from '../components/SkillsSection';
 import ExperienceSection from '../components/ExperienceSection';
 import EducationSection from '../components/EducationSection';
+import CertificationsSection from '../components/CertificationsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ArticlesPreview from '../components/ArticlesPreview';
 import LifeBeyondCodePreview from '../components/LifeBeyondCodePreview';
@@ -45,6 +46,15 @@ const Home = () => {
             subtitle="Academic Background"
           />
           <EducationSection />
+        </AnimatedSection>
+
+        <AnimatedSection id="certifications">
+          <SectionHeader 
+            icon={Award}
+            title="Certifications"
+            subtitle="Professional Qualifications"
+          />
+          <CertificationsSection />
         </AnimatedSection>
 
         <AnimatedSection id="projects">

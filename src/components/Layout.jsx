@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
     { label: 'Skills', icon: Code, href: '#skills' },
     { label: 'Experience', icon: Award, href: '#experience' },
     { label: 'Education', icon: BookOpen, href: '#education' },
+    { label: 'Certifications', icon: Award, href: '#certifications' },
     { label: 'Projects', icon: Briefcase, href: '#projects' },
     { label: 'Articles', icon: FileText, href: '#articles' },
     { label: 'Life Beyond Tech', icon: Compass, href: '#life' },
