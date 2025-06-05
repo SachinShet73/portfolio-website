@@ -1,0 +1,199 @@
+import React from 'react';
+import {
+  Container,
+  Typography,
+  Box,
+  Card,
+  CardContent,
+  Chip,
+  Avatar,
+  IconButton,
+  Grid,
+  Paper,
+  Divider,
+  Button
+} from '@mui/material';
+import {
+  Email,
+  GitHub,
+  LinkedIn,
+  GetApp,
+  Code,
+  Work,
+  School,
+  Build
+} from '@mui/icons-material';
+
+const Portfolio = () => {
+  return (
+    <Box sx={{ minHeight: '100vh', bgcolor: '#fafafa' }}>
+      <Container maxWidth="lg" sx={{ py: 4 }}>
+        
+        {/* Header */}
+        <Paper elevation={2} sx={{ p: 4, mb: 4, textAlign: 'center' }}>
+          <Avatar 
+            sx={{ 
+              width: 120, 
+              height: 120, 
+              mx: 'auto', 
+              mb: 2,
+              bgcolor: 'primary.main',
+              fontSize: '3rem'
+            }}
+          >
+            SR
+          </Avatar>
+          <Typography variant="h3" component="h1" fontWeight="bold" gutterBottom>
+            Sachin Ramesh Shet
+          </Typography>
+          <Typography variant="h5" color="text.secondary" sx={{ mb: 3 }}>
+            Big Data and ML Engineer
+          </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
+            <IconButton color="primary" href="mailto:your.email@example.com">
+              <Email />
+            </IconButton>
+            <IconButton color="primary" href="https://github.com/yourusername">
+              <GitHub />
+            </IconButton>
+            <IconButton color="primary" href="https://linkedin.com/in/yourusername">
+              <LinkedIn />
+            </IconButton>
+            <IconButton color="primary" href="/resume.pdf">
+              <GetApp />
+            </IconButton>
+          </Box>
+        </Paper>
+
+        <Grid container spacing={4}>
+          
+          {/* About */}
+          <Grid item xs={12}>
+            <Card elevation={1}>
+              <CardContent>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Code color="primary" />
+                  About
+                </Typography>
+                <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                  Passionate Big Data and Machine Learning engineer with expertise in building scalable data pipelines and 
+                  intelligent systems. I love turning complex data into actionable insights and creating innovative solutions 
+                  that drive business value.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Skills */}
+          <Grid item xs={12} md={6}>
+            <Card elevation={1} sx={{ height: '100%' }}>
+              <CardContent>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Build color="primary" />
+                  Skills
+                </Typography>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                  {['Python', 'Apache Spark', 'TensorFlow', 'AWS', 'Docker', 'Kafka', 'PostgreSQL', 'React'].map((skill) => (
+                    <Chip key={skill} label={skill} variant="outlined" color="primary" />
+                  ))}
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Experience */}
+          <Grid item xs={12} md={6}>
+            <Card elevation={1} sx={{ height: '100%' }}>
+              <CardContent>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Work color="primary" />
+                  Experience
+                </Typography>
+                <Box>
+                  <Typography variant="h6" component="h3">
+                    Data Engineer
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Tech Company • 2022 - Present
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Building scalable data pipelines and ML models for real-time analytics.
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Projects */}
+          <Grid item xs={12}>
+            <Card elevation={1}>
+              <CardContent>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Code color="primary" />
+                  Featured Projects
+                </Typography>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6}>
+                    <Paper variant="outlined" sx={{ p: 2 }}>
+                      <Typography variant="h6" gutterBottom>
+                        ML Pipeline Platform
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                        End-to-end machine learning platform for model training and deployment.
+                      </Typography>
+                      <Box sx={{ display: 'flex', gap: 1 }}>
+                        <Button size="small" variant="outlined">Live Demo</Button>
+                        <Button size="small" variant="outlined">GitHub</Button>
+                      </Box>
+                    </Paper>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Paper variant="outlined" sx={{ p: 2 }}>
+                      <Typography variant="h6" gutterBottom>
+                        Real-time Analytics Dashboard
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                        Interactive dashboard for monitoring streaming data and KPIs.
+                      </Typography>
+                      <Box sx={{ display: 'flex', gap: 1 }}>
+                        <Button size="small" variant="outlined">Live Demo</Button>
+                        <Button size="small" variant="outlined">GitHub</Button>
+                      </Box>
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Contact */}
+          <Grid item xs={12}>
+            <Card elevation={1}>
+              <CardContent sx={{ textAlign: 'center' }}>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1 }}>
+                  <Email color="primary" />
+                  Get in Touch
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Feel free to reach out for collaborations or just a friendly chat!
+                </Typography>
+                <Button 
+                  variant="contained" 
+                  color="primary" 
+                  href="mailto:your.email@example.com"
+                  sx={{ mt: 2 }}
+                  startIcon={<Email />}
+                >
+                  Contact Me
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+
+        </Grid>
+      </Container>
+    </Box>
+  );
+};
+
+export default Portfolio;

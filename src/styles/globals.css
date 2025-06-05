@@ -7,27 +7,6 @@ html {
 }
 
 body {
-  @apply bg-gray-900 text-white;
-}
-
-/* Hide scrollbar but keep functionality */
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-/* Smooth transitions */
-* {
-  @apply transition-colors duration-200;
-}
-
-/* Custom selection color */
-::selection {
-  @apply bg-amber-200/20 text-white;
-}
-
-/* Smooth image rendering */
-img {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
 }
