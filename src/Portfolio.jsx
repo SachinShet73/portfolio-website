@@ -31,38 +31,43 @@ const Portfolio = () => {
       <Container maxWidth="lg" sx={{ py: 4 }}>
         
         {/* Header */}
-        <Paper elevation={2} sx={{ p: 4, mb: 4, textAlign: 'center' }}>
-          <Avatar 
-            sx={{ 
-              width: 120, 
-              height: 120, 
-              mx: 'auto', 
-              mb: 2,
-              bgcolor: 'primary.main',
-              fontSize: '3rem'
-            }}
-          >
-            SR
-          </Avatar>
-          <Typography variant="h3" component="h1" fontWeight="bold" gutterBottom>
-            Sachin Ramesh Shet
-          </Typography>
-          <Typography variant="h5" color="text.secondary" sx={{ mb: 3 }}>
-            Big Data and ML Engineer
-          </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
-            <IconButton color="primary" href="mailto:your.email@example.com">
-              <Email />
-            </IconButton>
-            <IconButton color="primary" href="https://github.com/yourusername">
-              <GitHub />
-            </IconButton>
-            <IconButton color="primary" href="https://linkedin.com/in/yourusername">
-              <LinkedIn />
-            </IconButton>
-            <IconButton color="primary" href="/resume.pdf">
-              <GetApp />
-            </IconButton>
+        <Paper elevation={2} sx={{ p: 4, mb: 4 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, mb: 3 }}>
+            <Avatar 
+              src="/profilepicture.jpg"
+              sx={{ 
+                width: 120, 
+                height: 120,
+                bgcolor: 'primary.main',
+                fontSize: '3rem'
+              }}
+            >
+              SR
+            </Avatar>
+            <Box sx={{ flex: 1 }}>
+              <Typography variant="h3" component="h1" fontWeight="bold" gutterBottom>
+                Sachin Ramesh Shet
+              </Typography>
+              <Typography variant="h5" color="text.secondary">
+                Big Data and ML Engineer
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ textAlign: 'center' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
+              <IconButton color="primary" href="mailto:your.email@example.com">
+                <Email />
+              </IconButton>
+              <IconButton color="primary" href="https://github.com/yourusername">
+                <GitHub />
+              </IconButton>
+              <IconButton color="primary" href="https://linkedin.com/in/yourusername">
+                <LinkedIn />
+              </IconButton>
+              <IconButton color="primary" href="/resume.pdf">
+                <GetApp />
+              </IconButton>
+            </Box>
           </Box>
         </Paper>
 
