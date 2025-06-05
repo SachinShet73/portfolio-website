@@ -21,7 +21,8 @@ import {
   Code,
   Work,
   School,
-  Build
+  Build,
+  EmojiEvents
 } from '@mui/icons-material';
 
 const Portfolio = () => {
@@ -120,6 +121,58 @@ const Portfolio = () => {
                     Building scalable data pipelines and ML models for real-time analytics.
                   </Typography>
                 </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Certifications */}
+          <Grid item xs={12}>
+            <Card elevation={1}>
+              <CardContent>
+                <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <EmojiEvents color="primary" />
+                  Certifications
+                </Typography>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6}>
+                    <Paper variant="outlined" sx={{ p: 2 }}>
+                      <Typography variant="h6" gutterBottom>
+                        Azure Data Engineer Associate
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+                        Microsoft • Issued: January 2023
+                      </Typography>
+                      <Typography variant="body2" sx={{ mb: 2 }}>
+                        Data engineering expertise on Microsoft Azure platform including data pipelines, transformation, and analytics.
+                      </Typography>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 2 }}>
+                        {['Azure Data Factory', 'Databricks', 'Synapse Analytics'].map((skill) => (
+                          <Chip key={skill} label={skill} size="small" variant="outlined" />
+                        ))}
+                      </Box>
+                      <Button size="small" variant="outlined" href="#" target="_blank">View Credential</Button>
+                    </Paper>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Paper variant="outlined" sx={{ p: 2 }}>
+                      <Typography variant="h6" gutterBottom>
+                        AWS Certified Data Analytics
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+                        Amazon Web Services • Issued: July 2022
+                      </Typography>
+                      <Typography variant="body2" sx={{ mb: 2 }}>
+                        Specialized certification in designing and maintaining data analytics solutions on AWS.
+                      </Typography>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 2 }}>
+                        {['Redshift', 'Glue', 'Kinesis', 'EMR'].map((skill) => (
+                          <Chip key={skill} label={skill} size="small" variant="outlined" />
+                        ))}
+                      </Box>
+                      <Button size="small" variant="outlined" href="#" target="_blank">View Credential</Button>
+                    </Paper>
+                  </Grid>
+                </Grid>
               </CardContent>
             </Card>
           </Grid>
