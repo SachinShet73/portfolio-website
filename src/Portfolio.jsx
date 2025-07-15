@@ -143,39 +143,20 @@ const Portfolio = () => {
                   <Grid item xs={12} md={6}>
                     <Paper variant="outlined" sx={{ p: 2 }}>
                       <Typography variant="h6" gutterBottom>
-                        Azure Data Engineer Associate
+                        Introduction to Data Engineering
                       </Typography>
                       <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-                        Microsoft • Issued: January 2023
+                        Coursera • Issued: July 2025
                       </Typography>
                       <Typography variant="body2" sx={{ mb: 2 }}>
-                        Data engineering expertise on Microsoft Azure platform including data pipelines, transformation, and analytics.
+                        Comprehensive introduction to data engineering concepts, including data pipelines, ETL processes, and data architecture fundamentals.
                       </Typography>
                       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 2 }}>
-                        {['Azure Data Factory', 'Databricks', 'Synapse Analytics'].map((skill) => (
+                        {['Data Pipelines', 'ETL Processes', 'Data Architecture', 'Python for Data Engineering', 'SQL'].map((skill) => (
                           <Chip key={skill} label={skill} size="small" variant="outlined" />
                         ))}
                       </Box>
-                      <Button size="small" variant="outlined" href="#" target="_blank">View Credential</Button>
-                    </Paper>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <Paper variant="outlined" sx={{ p: 2 }}>
-                      <Typography variant="h6" gutterBottom>
-                        AWS Certified Data Analytics
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-                        Amazon Web Services • Issued: July 2022
-                      </Typography>
-                      <Typography variant="body2" sx={{ mb: 2 }}>
-                        Specialized certification in designing and maintaining data analytics solutions on AWS.
-                      </Typography>
-                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 2 }}>
-                        {['Redshift', 'Glue', 'Kinesis', 'EMR'].map((skill) => (
-                          <Chip key={skill} label={skill} size="small" variant="outlined" />
-                        ))}
-                      </Box>
-                      <Button size="small" variant="outlined" href="#" target="_blank">View Credential</Button>
+                      <Button size="small" variant="outlined" href="https://www.coursera.org/account/accomplishments/verify/APSO9Y96JHDV" target="_blank">View Credential</Button>
                     </Paper>
                   </Grid>
                 </Grid>
