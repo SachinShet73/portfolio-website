@@ -10,7 +10,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const CertificationsSection = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
 
-  // Sample certifications data - replace with your actual certifications
+  // Certifications data
   const certifications = [
     {
       title: "Introduction to Data Engineering",
@@ -28,60 +28,6 @@ const CertificationsSection = () => {
       ],
       icon: BookOpen,
       color: "green"
-    },
-    {
-      title: "Azure Data Engineer Associate",
-      issuer: "Microsoft",
-      issueDate: "January 2023",
-      expiryDate: "January 2025",
-      credentialId: "CERT-1234-ABCD",
-      credentialUrl: "https://www.credly.com/badges/example",
-      description: "Validates expertise in data engineering on Microsoft Azure, including designing and implementing the management, monitoring, security, and privacy of data solutions.",
-      skills: [
-        "Azure Data Factory",
-        "Azure Databricks",
-        "Azure Data Lake Storage",
-        "Azure Synapse Analytics",
-        "Data Transformation"
-      ],
-      icon: Shield,
-      color: "blue"
-    },
-    {
-      title: "Machine Learning Engineer Certification",
-      issuer: "IBM",
-      issueDate: "March 2022",
-      expiryDate: "March 2025",
-      credentialId: "IBM-ML-5678",
-      credentialUrl: "https://www.credly.com/badges/example",
-      description: "Demonstrates proficiency in developing machine learning models, utilizing various algorithms, and deploying models to production environments.",
-      skills: [
-        "TensorFlow",
-        "Scikit-learn",
-        "Deep Learning",
-        "Model Deployment",
-        "Python for ML"
-      ],
-      icon: BookOpen,
-      color: "purple"
-    },
-    {
-      title: "AWS Certified Data Analytics - Specialty",
-      issuer: "Amazon Web Services",
-      issueDate: "July 2022",
-      expiryDate: "July 2025",
-      credentialId: "AWS-DA-9012",
-      credentialUrl: "https://www.credly.com/badges/example",
-      description: "Validates technical expertise in designing and maintaining data analytics solutions on AWS, including data collection, storage, processing, and visualization.",
-      skills: [
-        "Amazon Redshift",
-        "AWS Glue",
-        "Amazon Kinesis",
-        "Amazon EMR",
-        "Data Visualization"
-      ],
-      icon: Cloud,
-      color: "orange"
     }
   ];
 
