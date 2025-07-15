@@ -25,6 +25,24 @@ const AllCertifications = () => {
   // Certifications data
   const certifications = [
     {
+      title: "Introduction to Data Engineering",
+      issuer: "Coursera",
+      issueDate: "July 2025",
+      credentialId: "APSO9Y96JHDV",
+      credentialUrl: "https://www.coursera.org/account/accomplishments/verify/APSO9Y96JHDV",
+      description: "Comprehensive introduction to data engineering concepts, including data pipelines, ETL processes, and data architecture fundamentals.",
+      skills: [
+        "Data Pipelines",
+        "ETL Processes",
+        "Data Architecture",
+        "Python for Data Engineering",
+        "SQL"
+      ],
+      icon: BookOpen,
+      category: "data",
+      color: "green"
+    },
+    {
       title: "Azure Data Engineer Associate",
       issuer: "Microsoft",
       issueDate: "January 2023",
