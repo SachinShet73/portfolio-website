@@ -31,7 +31,7 @@ const Portfolio = () => {
       <Container maxWidth="md" sx={{ py: 6 }}>
         
         {/* Header */}
-        <Paper elevation={0} sx={{ p: 5, mb: 6, borderRadius: 3, bgcolor: 'white', border: '1px solid #f0f0f0' }} className="hover-lift">
+        <Paper elevation={0} sx={{ p: 5, mb: 6, borderRadius: 3, bgcolor: 'white', border: '2px solid #d1d5db' }} className="hover-lift">
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, mb: 3 }}>
             <Avatar 
               src="/profilepicture.jpg"
@@ -76,7 +76,7 @@ const Portfolio = () => {
           
           {/* About */}
           <Grid item xs={12}>
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Code color="primary" />
@@ -93,7 +93,7 @@ const Portfolio = () => {
 
           {/* Skills */}
           <Grid item xs={12} md={6}>
-            <Card elevation={0} sx={{ height: '100%', borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ height: '100%', borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Build color="primary" />
@@ -110,7 +110,7 @@ const Portfolio = () => {
 
           {/* Experience */}
           <Grid item xs={12} md={6}>
-            <Card elevation={0} sx={{ height: '100%', borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ height: '100%', borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Work color="primary" />
@@ -133,7 +133,7 @@ const Portfolio = () => {
 
           {/* Certifications */}
           <Grid item xs={12}>
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <EmojiEvents color="primary" />
@@ -185,7 +185,7 @@ const Portfolio = () => {
 
           {/* Projects */}
           <Grid item xs={12}>
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Code color="primary" />
@@ -227,7 +227,7 @@ const Portfolio = () => {
 
           {/* Contact */}
           <Grid item xs={12}>
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #f0f0f0' }} className="hover-lift">
+            <Card elevation={0} sx={{ borderRadius: 3, border: '2px solid #d1d5db' }} className="hover-lift">
               <CardContent sx={{ textAlign: 'center', p: 4 }}>
                 <Typography variant="h5" component="h2" gutterBottom sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1 }}>
                   <Email color="primary" />
